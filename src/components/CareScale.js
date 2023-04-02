@@ -5,10 +5,25 @@ function CareScale({scaleValue, careType}) {
     const scaleType = careType === 'light' ? '☀️' : '💧'
     
 
+const quantityLabel = {
+    1: `peu`,
+    2: `moyennement`,
+    3: `beaucoup`
+}
+
     return (
-        <div>
+        <div
+
+            onClick={() =>
+                alert(`Cette plante requiert ${quantityLabel[scaleValue]} ${careType ==='light' ? 'de lumière' : "d'arrosage"}`)
+            
+            }
+        >
+
             {range.map((rangeElem) =>
-                scaleValue >= rangeElem ? <span key={rangeElem.toString()}>{scaleType}</span> : null
+                scaleValue >= rangeElem ? 
+                    <span key={rangeElem.toString()}>{scaleType}</span> 
+                : null
             )}
         </div>
     )
