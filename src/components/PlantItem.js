@@ -1,7 +1,6 @@
 import CareScale from "./CareScale";
 import { useState } from "react";
 import styled from "styled-components";
-import "../styles/PlantItem.css";
 
 function PlantItem({ plant }) {
 
@@ -9,7 +8,7 @@ function PlantItem({ plant }) {
  position: relative;
  height: 200px;
 width: 200px;
-margin-bottom: 20px;
+margin-bottom: 15%;
 
  `
   const ImagePlant = styled.img`
@@ -25,8 +24,8 @@ margin-bottom: 20px;
     height: 200px;
     width: 200px;
     bottom: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     right: 0;
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
