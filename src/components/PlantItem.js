@@ -3,14 +3,12 @@ import { useState } from "react";
 import styled from "styled-components";
 
 function PlantItem({ plant }) {
-
- const PositionRelative = styled.div`
- position: relative;
- height: 200px;
-width: 200px;
-margin-bottom: 15%;
-
- `
+  const PositionRelative = styled.div`
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15%;
+  `;
   const ImagePlant = styled.img`
     height: 200px;
     width: 200px;
@@ -33,7 +31,7 @@ margin-bottom: 15%;
     &:hover {
       opacity: 1;
     }
-	text-align: center;
+    text-align: center;
     transition: opacity 0.2s, visibility 0.2s;
   `;
   const Title = styled.p`
@@ -89,7 +87,8 @@ margin-bottom: 15%;
       <PositionRelative>
         <ImagePlant src={plant.cover} alt={`${plant.name} cover`} />
         <HiddentText>
-          <span style={{fontWeight:800}}>Did you know?</span> <br /><br />
+          <span style={{ fontWeight: 800 }}>Did you know?</span> <br />
+          <br />
           Monstera is one of the best plants for purifying household air
           pollution 😉
         </HiddentText>
